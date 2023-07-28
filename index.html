@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Why not DRS?</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<main>
+		<div id="message" style="display:none">Our lemmy instance is down for maintenance.</div>
+		<div class="call-to-action" id="discord" style="display:none">
+			<a class="cta-button" href="https://discord.gg/mqdZx35w">Visit our Discord</a>
+		</div>
+	</main>
+</body>
+<script>
+	if(document.location.origin==="https://lemmy.whynotdrs.org"){
+		document.getElementById("message").style.display="block"
+	}
+	if(Date.now() < Date.parse('05 Aug 2023 00:00:00 GMT')){
+		document.getElementById("discord").style.display="block"
+	}
+
+</script>
+</html>

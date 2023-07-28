@@ -1,0 +1,51 @@
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	max-width:900px;
+	margin: 0 auto;
+	padding: 1rem;
+	text-align: center;
+}
+.main-image {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.call-to-action {
+	margin-top: 1rem;
+}
+
+
+.cta-button {
+	display: inline-block;
+	padding: 1rem 2rem;
+	background-color: rgb(20, 79, 155);
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+	border-radius: 5px;
+}
+
+.footer {
+	text-align: center;
+	font-size: 0.8rem;
+	margin: 2.5rem auto;
+}
+.footer>a{
+	color: #888;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+	.cta-button {
+		display: block;
+		margin: 10px auto;
+	}
+}
